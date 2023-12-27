@@ -9,12 +9,11 @@
 }
 
 body {
-  /* font-family: "Poppins", sans-serif; */
+  overscroll-behavior: none;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .container {
   max-width: 1050px;
-  /* width: 90%; */
   margin: auto;
 }
