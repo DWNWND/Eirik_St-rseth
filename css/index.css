@@ -1,15 +1,25 @@
 .circle {
   background-color: rgb(255, 255, 255);
-  height: 45vh;
-  width: 45vh;
+  height: 90vw;
+  width: 90vw;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   /* position: absolute;
   top: 500px; */
-  /* left: auto;
+  /* left: auto;"
   right: auto; */
+}
+.img-circle-container {
+  background-image: url("/img/unsplash_1UnEP_LiMw0.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem; */
 }
 .info {
   text-align: center;
