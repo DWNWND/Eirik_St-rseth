@@ -41,7 +41,7 @@
   text-align: center;
   padding: 4rem;
   background-color: #e3ecf1;
-  font-size: 0.6rem;
+  font-size: 1.5rem;
 }
 .q-container {
   text-align: center;
@@ -65,7 +65,55 @@ span.name {
 img {
   width: 100%;
 }
-
+section.tjenester {
+  background-color: #CFDFE9;
+  padding: 3rem;
+}
+.tjenester h1 {
+  color: #15303F;
+  font-size: 2.3rem;;
+}
+.tjenester h2 {
+  color: #e77100;
+}
+h2.på-forespørsel {
+  color: #56798E;
+}
+.tjenester-header {
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tjenester span {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.alle-tjenester-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tjenester p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.pris {
+  text-align: right;
+}
+/* .enkelt-tjenester-container span {
+  padding-bottom: 3rem;
+} */
+.tid-pris-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -130,6 +178,22 @@ img {
   }
   .info {
     font-size: 1.3rem;
+  }
+  section.tjenester {
+    position: relative;
+    top: -78px;
+    padding: 7rem;
+  }
+  .tjenester-header {
+    max-width: 900px;
+    padding-bottom: 5rem;
+    /* padding-top: 4rem; */
+  }
+  .alle-tjenester-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    max-width: 900px;
   }
 }
 @media (min-width: 750px) {
