@@ -43,17 +43,18 @@ nav {
 .logo {
   position: absolute;
   right: 15px;
-  font-size: 1rem;
-  color: #3f464c;
+  /* font-size: 1rem;
+  color: #3f464c; */
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 4.5rem;
-  transition: color 0.5s ease-in-out;
+  max-width: 150px;
+  /* transition: color 0.5s ease-in-out; */
 }
 
-.logo span {
+/* .logo span {
   display: inline-block;
-}
+} */
 
 nav .checkbox {
   position: absolute;
@@ -125,7 +126,7 @@ nav .hamburger-lines .line3 {
   align-items: center;
   justify-content: center;
   max-width: 400px;
-  padding: 1.1rem 0.9rem 0.9rem 0.9rem;
+  padding: 1rem 0.8rem 0.8rem 0.8rem;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
@@ -134,7 +135,7 @@ nav .hamburger-lines .line3 {
   border-radius: 1.25rem;
 }
 .CTA-book-session {
-  background-color: #f58519;
+  background-color: #e77100;
   color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-top: 2rem;
@@ -166,9 +167,9 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
 
-nav input[type="checkbox"]:checked ~ .navbar .logo {
+/* nav input[type="checkbox"]:checked ~ .navbar .logo {
   color: #b5c1cb;
-}
+} */
 
 @media (min-width: 430px) {
   .menu-items {
@@ -188,9 +189,9 @@ nav input[type="checkbox"]:checked ~ .navbar .logo {
     margin-top: 2rem;
   }
 
-  .logo {
+  /* .logo {
     font-size: 1.2rem;
-  }
+  } */
 }
 @media (hover: hover) {
   .link:hover {

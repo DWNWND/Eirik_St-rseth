@@ -1,3 +1,6 @@
+.logo-big {
+  display: none;
+}
 .circle {
   background-color: rgb(255, 255, 255);
   height: 90vw;
@@ -49,6 +52,7 @@
 h1.title,
 h2.q {
   font-weight: 200;
+  color: #15303f;
 }
 h1.name {
   font-weight: 800;
@@ -71,32 +75,62 @@ img {
   opacity: 1;
 }
 
-@media (min-width: 250px) { 
-.info {
-  font-size: 0.8rem;
+@media (min-width: 250px) {
+  .info {
+    font-size: 0.8rem;
+  }
 }
-}
-@media (min-width: 300px) { 
+@media (min-width: 300px) {
   .info {
     font-size: 0.9rem;
   }
-  }
-@media (min-width: 350px) { 
+}
+@media (min-width: 350px) {
   .info {
     font-size: 1rem;
   }
-  }
-@media (min-width: 400px) { 
-
+}
+@media (min-width: 400px) {
   .circle {
     height: 23rem;
     width: 23rem;
   }
   .img-circle-container {
     height: 90vh;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
+  .img-circle-container {
+    position: relative;
+    top: -78px;
+    right: 230px;
+  }
+  .circle {
+    position: relative;
+    left: 450px;
+    top: 70px;
+    height: 30rem;
+    width: 30rem;
+  }
+  .q-container {
+    position: relative;
+    /* top: 100px;
+    left: 122px; */
+    background-color: transparent;
+    z-index: 10;
+    transform: translateY(50px) translateX(122px);
+  }
+  h2.q {
+    font-size: 2.5rem;
+    z-index: 10;
+  }
+  .info {
+    font-size: 1.3rem;
+  }
+}
+/* @media (min-width: 750px) {
   h1.title {
     font-size: 1.5rem;
   }
@@ -106,9 +140,16 @@ img {
   .heading-container {
     padding: 5rem;
   }
-}
+} */
 
 @media (min-width: 750px) {
+  .logo-big {
+    display: block;
+    padding-bottom: 3rem;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
   h1.title {
     font-size: 2rem;
   }
@@ -118,5 +159,4 @@ img {
   .heading-container {
     padding: 6rem;
   }
- }
-
+}
