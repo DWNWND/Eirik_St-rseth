@@ -32,9 +32,11 @@ nav {
 
 .menu-items .link {
   text-decoration: none;
+  text-transform: uppercase;
   color: #3f464c;
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
   /* padding: 0.7rem 0.7rem 0.7rem 0; */
 }
 
@@ -174,7 +176,7 @@ nav input[type="checkbox"]:checked ~ .navbar .logo {
   }
 
   .CTA {
-    min-width: 300px;
+    min-width: 250px;
     margin-top: 0;
   }
 
@@ -192,7 +194,10 @@ nav input[type="checkbox"]:checked ~ .navbar .logo {
 }
 @media (hover: hover) {
   .link:hover {
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    /* text-decoration: underline; */
+    /* font-size: 1.1rem; */
+    color: #718895;
   }
 }
 
