@@ -1,24 +1,36 @@
 .logo-big {
   display: none;
 }
+
 footer {
   background-color: #15303f;
-  padding: 10rem 3rem;
-}
-.powered-by-container {
+  color: white;
+  padding: 10rem 3rem 3rem 3rem;
   text-align: center;
 }
+
+.org-nr {
+  font-weight: 200;
+  margin-top: 10rem;
+  display: block;
+}
+
 .powered-by-container span {
   font-weight: 500;
-  color: white;
   margin-bottom: 2rem;
   display: block;
 }
+
 .img-footer {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
+
+.hvorfor-section {
+  background-color: white;
+}
+
 .circle {
   background-color: rgb(255, 255, 255);
   height: 90vw;
@@ -28,107 +40,139 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 50px 15px #e2f4ff;
+  position: relative;
+  z-index: 10;
   /* position: absolute;
   top: 500px; */
   /* left: auto;"
   right: auto; */
 }
+
 .img-circle-container {
   background-image: url("/img/unsplash_1UnEP_LiMw0.png");
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 7;
+  position: relative;
   /* padding: 2rem; */
 }
+
 .info {
   text-align: center;
   width: 80%;
   color: #15303f;
   font-size: 0.7rem;
 }
+
 .info-part-2 {
   margin-top: 1rem;
 }
+
 .blue {
   color: #0d72b1;
 }
+
 .heading-container {
   text-align: center;
   padding: 4rem;
   background-color: #e3ecf1;
   font-size: 1.5rem;
 }
+
 .q-container {
   text-align: center;
   background-color: white;
   padding: 1rem;
   font-size: 0.8rem;
 }
+
 span.title,
 h1.q {
   font-weight: 200;
   color: #15303f;
   display: block;
 }
+
 span.name {
   font-weight: 800;
   display: block;
 }
+
 .img {
   display: flex;
 }
+
 img {
   width: 100%;
 }
+
 .dot-container {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   padding: 1rem 0;
 }
+
 .dot {
   background-color: #365567;
   border-radius: 50%;
   height: 10px;
   width: 10px;
 }
+.gradient-container {
+  height: 10px;
+  background: rgb(214, 228, 236);
+}
+.gradient {
+  background: linear-gradient(0deg, rgba(214, 228, 236, 1) 10%, rgba(255, 255, 255, 0) 100%);
+  height: 200px;
+  position: relative;
+  top: -200px;
+  z-index: 8;
+}
 section.tjenester {
   position: relative;
-  /* background-color: #d6e4ec; */
   background: rgb(214, 228, 236);
-  top: -200px;
-  padding: 15rem 3rem 7rem 3rem;
-  background: linear-gradient(0deg, rgba(214, 228, 236, 1) 80%, rgba(255, 255, 255, 0) 100%);
+  /* top: -200px; */
+  padding: 7rem 3rem;
+  /* background: linear-gradient(0deg, rgba(214, 228, 236, 1) 80%, rgba(255, 255, 255, 0) 100%); */
   z-index: 8;
-  /* padding: 3rem; */
 }
+
 section.kvalifikasjoner {
-  position: relative;
+  /* position: relative; */
   background-color: #15303f;
-  top: -200px;
+  /* top: -200px; */
   padding: 7rem 3rem 7rem 3rem;
   color: white;
 }
+
 .tjenester h1 {
   color: #15303f;
   font-size: 2.3rem;
 }
+
 .kvalifikasjoner h1 {
   font-size: 2rem;
 }
+
 .tjenester h2 {
   color: #e77100;
 }
+
 h2.på-forespørsel {
   color: #56798e;
 }
+
 .kvalifikasjoner h2 {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
 .tjenester-header,
 .kvalifikasjoner-header {
   padding-bottom: 4rem;
@@ -137,11 +181,13 @@ h2.på-forespørsel {
   margin-left: auto;
   margin-right: auto;
 }
+
 .tjenester span {
   font-style: italic;
   font-weight: 300;
   font-size: 1.1rem;
 }
+
 .alle-tjenester-container,
 .alle-kvalifikasjoner-container {
   display: flex;
@@ -151,53 +197,59 @@ h2.på-forespørsel {
   margin-left: auto;
   margin-right: auto;
 }
+
 .tjenester p,
 .kvalifikasjoner p {
   font-size: 1.3rem;
   font-weight: 300;
 }
+
 .pris {
   text-align: right;
 }
-/* .enkelt-tjenester-container span {
-  padding-bottom: 3rem;
-} */
+
 .tid-pris-container {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
 }
+
 .CTA-container-main.CTA-container {
-  position: relative;
+  /* position: relative; */
   background-color: #e3ecf1;
   margin-top: 0;
   padding: 5rem;
-  top: -200px;
+  /* top: -200px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
 }
+
 .CTA-main {
   min-width: 300px;
   padding: 1.2rem 1rem 1rem 1rem;
   text-align: center;
 }
+
 .CTA-book-session.CTA-main,
 .CTA-andre-forespørsler.CTA-main {
   margin: 0;
 }
+
 .kvalifikasjoner-img {
   height: 30rem;
-  position: relative;
-  top: -200px;
+  /* position: relative;
+  top: -200px; */
 }
+
 .reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
+
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
@@ -208,94 +260,42 @@ h2.på-forespørsel {
     font-size: 0.8rem;
   }
 }
+
 @media (min-width: 300px) {
   .info {
     font-size: 0.9rem;
   }
 }
+
 @media (min-width: 350px) {
   .info {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 400px) {
   .circle {
     height: 23rem;
     width: 23rem;
   }
+
   .img-circle-container {
-    height: 90vh;
+    /* height: 90vh; */
     margin-right: auto;
     margin-left: auto;
   }
 }
+
 @media (min-width: 550px) {
   .kvalifikasjoner-img {
     height: 20rem;
   }
+
   .kvalifikasjoner-img img {
     object-position: 60% 40%;
   }
 }
-@media (min-width: 1000px) {
-  .img-circle-container {
-    position: relative;
-    top: -78px;
-    right: 230px;
-  }
-  .circle {
-    position: relative;
-    left: 460px;
-    top: 70px;
-    height: 30rem;
-    width: 30rem;
-    z-index: 9;
-  }
-  .q-container {
-    position: relative;
-    top: 50px;
-    left: 122px;
-    /* background-color: transparent; */
-    z-index: 9;
-    /* transform: translateY(50px) translateX(122px); */
-  }
-  h1.q {
-    font-size: 2.5rem;
-    z-index: 9;
-  }
-  .info {
-    font-size: 1.3rem;
-  }
-  section.tjenester {
-    /* position: relative; */
-    /* top: -78px; */
-    /* top: -200px; */
-    padding: 13rem 7rem 10rem 7rem;
-    /* background: linear-gradient(0deg, rgba(214, 228, 236, 1) 80%, rgba(255, 255, 255, 0) 100%);
-    z-index: 8; */
-  }
-  section.kvalifikasjoner {
-    padding: 10rem 7rem;
-  }
-  .kvalifikasjoner-header {
-    max-width: 900px;
-    padding-bottom: 5rem;
-    padding-top: 0;
-  }
-  .tjenester-header {
-    max-width: 900px;
-    padding-bottom: 5rem;
-    padding-top: 0;
-    /* padding-top: 7rem; */
-  }
-  .alle-tjenester-container,
-  .alle-kvalifikasjoner-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    max-width: 900px;
-  }
-}
+
 @media (min-width: 750px) {
   .logo-big {
     display: block;
@@ -304,13 +304,98 @@ h2.på-forespørsel {
     margin-left: auto;
     margin-right: auto;
   }
+
   span.title {
     font-size: 2rem;
   }
+
   span.name {
     font-size: 2.5rem;
   }
+}
+
+@media (min-width: 1000px) {
   .heading-container {
-    padding: 6rem;
+    padding: 11rem 6rem 6rem 6rem;
+  }
+
+  .img-footer {
+    width: 30vw;
+  }
+
+  .img-circle-container {
+    position: relative;
+    right: 230px;
+  }
+
+  /* .hvorfor-section {
+    position: relative;
+    top: -78px;
+  } */
+
+  .circle {
+    /* position: relative;
+    z-index: 9; */
+    left: 460px;
+    top: 70px;
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .hvorfor-section {
+    height: 800px;
+  }
+
+  .q-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 128px;
+    /* background-color: transparent; */
+    z-index: 9;
+    /* transform: translateY(50px) translateX(122px); */
+  }
+
+  .q {
+    width: 650px;
+    left: 122px;
+    position: relative;
+  }
+
+  h1.q {
+    font-size: 2.5rem;
+    z-index: 9;
+  }
+
+  .info {
+    font-size: 1.3rem;
+  }
+
+  section.tjenester {
+    padding: 13rem 7rem 10rem 7rem;
+  }
+
+  section.kvalifikasjoner {
+    padding: 10rem 7rem;
+  }
+
+  .kvalifikasjoner-header {
+    max-width: 900px;
+    padding-bottom: 5rem;
+    padding-top: 0;
+  }
+
+  .tjenester-header {
+    max-width: 900px;
+    padding-bottom: 5rem;
+    padding-top: 0;
+  }
+
+  .alle-tjenester-container,
+  .alle-kvalifikasjoner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    max-width: 900px;
   }
 }
