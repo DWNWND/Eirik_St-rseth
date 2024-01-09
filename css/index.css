@@ -1,6 +1,24 @@
 .logo-big {
   display: none;
 }
+footer {
+  background-color: #15303f;
+  padding: 10rem 3rem;
+}
+.powered-by-container {
+  text-align: center;
+}
+.powered-by-container span {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2rem;
+  display: block;
+}
+.img-footer {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
 .circle {
   background-color: rgb(255, 255, 255);
   height: 90vw;
@@ -65,6 +83,18 @@ span.name {
 img {
   width: 100%;
 }
+.dot-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.dot {
+  background-color: #365567;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
 section.tjenester {
   position: relative;
   /* background-color: #d6e4ec; */
@@ -75,9 +105,19 @@ section.tjenester {
   z-index: 8;
   /* padding: 3rem; */
 }
+section.kvalifikasjoner {
+  position: relative;
+  background-color: #15303f;
+  top: -200px;
+  padding: 7rem 3rem 7rem 3rem;
+  color: white;
+}
 .tjenester h1 {
   color: #15303f;
   font-size: 2.3rem;
+}
+.kvalifikasjoner h1 {
+  font-size: 2rem;
 }
 .tjenester h2 {
   color: #e77100;
@@ -85,7 +125,12 @@ section.tjenester {
 h2.på-forespørsel {
   color: #56798e;
 }
-.tjenester-header {
+.kvalifikasjoner h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.tjenester-header,
+.kvalifikasjoner-header {
   padding-bottom: 4rem;
   padding-top: 3rem;
   max-width: 500px;
@@ -97,7 +142,8 @@ h2.på-forespørsel {
   font-weight: 300;
   font-size: 1.1rem;
 }
-.alle-tjenester-container {
+.alle-tjenester-container,
+.alle-kvalifikasjoner-container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -105,7 +151,8 @@ h2.på-forespørsel {
   margin-left: auto;
   margin-right: auto;
 }
-.tjenester p {
+.tjenester p,
+.kvalifikasjoner p {
   font-size: 1.3rem;
   font-weight: 300;
 }
@@ -136,10 +183,14 @@ h2.på-forespørsel {
   padding: 1.2rem 1rem 1rem 1rem;
   text-align: center;
 }
+.CTA-book-session.CTA-main,
+.CTA-andre-forespørsler.CTA-main {
+  margin: 0;
+}
 .kvalifikasjoner-img {
   height: 30rem;
   position: relative;
-  top:-200px;
+  top: -200px;
 }
 .reveal {
   position: relative;
@@ -178,6 +229,14 @@ h2.på-forespørsel {
     margin-left: auto;
   }
 }
+@media (min-width: 550px) {
+  .kvalifikasjoner-img {
+    height: 20rem;
+  }
+  .kvalifikasjoner-img img {
+    object-position: 60% 40%;
+  }
+}
 @media (min-width: 1000px) {
   .img-circle-container {
     position: relative;
@@ -211,16 +270,26 @@ h2.på-forespørsel {
     /* position: relative; */
     /* top: -78px; */
     /* top: -200px; */
-    padding: 10rem 7rem;
+    padding: 13rem 7rem 10rem 7rem;
     /* background: linear-gradient(0deg, rgba(214, 228, 236, 1) 80%, rgba(255, 255, 255, 0) 100%);
     z-index: 8; */
+  }
+  section.kvalifikasjoner {
+    padding: 10rem 7rem;
+  }
+  .kvalifikasjoner-header {
+    max-width: 900px;
+    padding-bottom: 5rem;
+    padding-top: 0;
   }
   .tjenester-header {
     max-width: 900px;
     padding-bottom: 5rem;
+    padding-top: 0;
     /* padding-top: 7rem; */
   }
-  .alle-tjenester-container {
+  .alle-tjenester-container,
+  .alle-kvalifikasjoner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
@@ -231,7 +300,7 @@ h2.på-forespørsel {
   .logo-big {
     display: block;
     padding-bottom: 3rem;
-    width: 20vw;
+    width: 50vw;
     margin-left: auto;
     margin-right: auto;
   }
