@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Vital Veiledning</title>
+    <title>Vital veiledning</title>
     <meta name="description" content="description text abc.." />
     <link rel="icon" href="/img/vi-favicon-round.png" />
     <meta charset="UTF-8" />
@@ -14,67 +14,72 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo-top">
-          <img class="logo-nav-top" src="img/vital-logo-orange-bigger-dropshadow.png" alt="Vital logo" />
+      <nav class="show">
+        <div class="logo-nav-desktop-container">
+          <img class="logo-nav-desktop" src="img/vital-logo-orange-bigger-dropshadow.png" alt="Vital logo" />
         </div>
-        <input class="checkbox" type="checkbox" name="" id="" />
+
+        <input class="checkbox" type="checkbox" name="hamburgermenu" id="checkbox" />
         <div class="hamburger-lines">
           <span class="line line1"></span>
           <span class="line line2"></span>
           <span class="line line3"></span>
         </div>
         <div class="navbar">
-          <div class="logo">
-            <img class="logo-nav" src="img/vital-logo-orange-bigger-dropshadow.png" alt="Vital logo" />
-            <!-- <span><b>VITAL</b></span> -->
-            <!-- <span>helse</span> -->
+          <div class="logo-nav-tablet-container">
+            <img class="logo-nav-tablet" src="img/vital-logo-orange-bigger-dropshadow.png" alt="Vital logo" />
           </div>
         </div>
-        <div class="container nav-container">
+        <div class="nav-container">
           <div class="menu-items">
             <li><a href="#" class="link">Tjenester</a></li>
             <li><a href="#" class="link">Om meg</a></li>
             <li><a href="#" class="link">Kontakt</a></li>
           </div>
           <div class="CTA-container">
-            <li><a href="#" class="CTA CTA-book-session">BOOK TIME</a></li>
-            <!-- <li><a href="#" class="CTA CTA-andre-forespørsler">ANDRE FORESPØRSLER</a></li> -->
+            <li><a href="#" class="CTA button">BOOK TIME</a></li>
+          </div>
+          <div class="banner banner-tablet"><div>Din første kartleggingstime er gratis</div></div>
+          <div class="powered-by-container">
+            <span>WEBSITE POWERED BY:</span>
+            <div class="dwnwnd-logo-footer">
+              <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
+            </div>
+            <span class="org-nr">ORG.NR: XXXXXXXXX</span>
           </div>
         </div>
+        <div class="banner banner-desktop show"><div>Din første kartleggingstime er gratis</div></div>
       </nav>
     </header>
     <main>
-      <div class="heading-container">
-        <!-- <img class="logo-big" src="img/vital-logo-orange-bigger-dropshadow.png" alt="Vital logo" /> -->
-        <!-- disse skal ikke være h1 -->
-        <div class="eirik">
-          <span class="title">trenings- og helseveileder</span>
-          <span class="name">Eirik Størseth</span>
+      <section class="heading">
+        <div class="buisness-title">trenings- og helseveileder</div>
+        <div class="navn">Eirik Størseth</div>
+      </section>
+      <section class="hvorfor-spørsmål">
+        <div class="container reveal">
+          <h1>Hvorfor bør du ha en online helseveileder?</h1>
         </div>
-      </div>
-      <div class="q-container reveal">
-        <h1 class="q">Hvorfor bør du ha en online helseveileder?</h1>
-      </div>
-      <section class="hvorfor-section">
-        <div class="img-circle-container">
+      </section>
+      <section class="hvorfor-circle">
+        <div class="container">
           <div class="circle reveal">
             <div class="info">
-              <p class="info-part-1">God helse er <b>vitalt</b> for å leve et optimalt liv. Med meg som din digitale helseveileder kan vi sammen <b class="blue">ta kontroll over din helse</b> og styre deg i riktig retning utifra dine individuelle mål.</p>
-              <p class="info-part-2">
-                <b>Nøkkelen til god helse ligger i riktig program og kontuenitet.</b>
+              <p class="part-1">God helse er <b>vitalt</b> for å leve et optimalt liv. Med meg som din digitale helseveileder kan vi sammen <b class="blue-text">ta kontroll over din helse</b> og styre deg i riktig retning utifra dine individuelle mål.</p>
+              <p class="part-2">
+                <b>Nøkkelen til god helse ligger i riktig program og kontinuitet.</b>
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="kvalifikasjoner">
-        <div class="kvalifikasjoner-header reveal">
-          <h1>SLIK FUNGERER <img src="img/vital-logo-orange.png" class="vital-logo-in-text" alt="vital logo" /> VEILEDNING</h1>
+      <section class="opplegg">
+        <div class="header reveal">
+          <h1>SLIK FUNGERER <img src="img/vital-logo-orange-bigger.png" class="logo-in-text" alt="vital logo" /> VEILEDNING</h1>
         </div>
-        <div class="alle-kvalifikasjoner-container reveal">
-          <div class="enkelt-kvalifikasjon-container">
-            <div class="dot-container">
+        <div class="container reveal">
+          <div class="card">
+            <div class="dots-wrapper">
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
@@ -85,8 +90,8 @@
             <h2>1. KARTLEGGING</h2>
             <p>Vi kartlegger sammen ditt utgangspunktet og setter realistiske mål deretter.</p>
           </div>
-          <div class="enkelt-kvalifikasjon-container">
-            <div class="dot-container">
+          <div class="card">
+            <div class="dots-wrapper">
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
@@ -97,8 +102,8 @@
             <h2>2. PROGRAM</h2>
             <p>Etter en kartleggings samtale setter jeg opp ditt personlige program i appen. Programmet består av treningsprogram, ernæringsveiledniang, aktivitetsveiledning og mental trening alt utifra dine mål.</p>
           </div>
-          <div class="enkelt-kvalifikasjon-container">
-            <div class="dot-container">
+          <div class="card">
+            <div class="dots-wrapper">
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
@@ -109,8 +114,8 @@
             <h2>3. DU SETTER I GANG!</h2>
             <p>Nå er det din tur til å gjennomføre programmet. Jeg er alltid tilgjengelig på melding, ingen spørsmål er dumme!</p>
           </div>
-          <div class="enkelt-kvalifikasjon-container">
-            <div class="dot-container">
+          <div class="card">
+            <div class="dots-wrapper">
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
@@ -121,8 +126,8 @@
             <h2>4. CHECK-IN</h2>
             <p>En gang I uka har vi en telefon/video samtale hvor vi går igjennom uka og planlegger for neste.</p>
           </div>
-          <div class="enkelt-kvalifikasjon-container">
-            <div class="dot-container">
+          <div class="card">
+            <div class="dots-wrapper">
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
@@ -133,8 +138,8 @@
             <h2>5. JUSTERING</h2>
             <p>Programmet er fleksibelt og blir justert underveis utifra din situasjon. Du slipper ikke unna bare fordi du er på ferie!</p>
           </div>
-          <div class="enkelt-kvalifikasjon-container">
-            <div class="dot-container">
+          <div class="card">
+            <div class="dots-wrapper">
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
@@ -147,9 +152,9 @@
           </div>
         </div>
       </section>
-      <div class="CTA-container CTA-container-main">
+      <div class="CTA-container">
         <li>
-          <a href="#" class="CTA CTA-book-session CTA-main">BOOK<u>GRATIS</u>KARTLEGGINGSTIME</a>
+          <a href="#" class="CTA button">BOOK EN<b>GRATIS</b>KARTLEGGINGSTIME</a>
         </li>
       </div>
       <section class="hvorfor-online">
@@ -157,7 +162,7 @@
           <div class="card">
             <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
             <div class="info">
-              <h1>Location independence</h1>
+              <h1>Stedsuavhengighet</h1>
               <p>Vårt treningsløp vil følge deg uansett hvor du beveger deg i verden, og vil sikre at du vil kunne få de beste resultatene.</p>
             </div>
           </div>
@@ -165,14 +170,14 @@
             <div class="icon"><i class="fa-solid fa-bolt-lightning"></i></div>
             <div class="info">
               <h1>Effektivitet</h1>
-              <p>En 30 min økt med meg kan du klemme inn i hvilken som helst hverdag.</p>
+              <p>En 30 min økt med meg kan du klemme inn i hvilken som helst hverdag. Når som helst, hvor som helst.</p>
             </div>
           </div>
           <div class="card">
             <div class="icon"><i class="fa-solid fa-comments"></i></div>
             <div class="info">
-              <h1>Profesjonell ekspertise</h1>
-              <p>Med over 10 år i bransjen, en idrettskarriære under belte og uttallige kurs vil jeg forsikre deg om at du får en av de beste oppfølgingen tilgjengelig.</p>
+              <h1>Kvalitet</h1>
+              <p>Med over 10 år i bransjen, en idrettskarriære under belte og uttallige kurs vil jeg forsikre deg om at du får den beste oppfølgingen tilgjengelig.</p>
             </div>
           </div>
           <div class="card">
@@ -188,13 +193,12 @@
     <footer>
       <div class="powered-by-container">
         <span>WEBSITE POWERED BY:</span>
-        <div class="img-footer">
+        <div class="dwnwnd-logo-footer">
           <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
         </div>
       </div>
       <span class="org-nr">ORG.NR: XXXXXXXXX</span>
     </footer>
     <script type="module" src="index.js"></script>
-    <!-- <script type="module" src="circle.js"></script> -->
   </body>
 </html>
