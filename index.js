@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
     // user has scrolled up
     // document.querySelector(".nav").classList.add("show");
     document.querySelector("nav").classList.remove("hide");
-    document.querySelector(".banner").classList.remove("hide");
+    document.querySelector(".banner-desktop").classList.remove("hide");
     document.getElementById("checkbox").checked = false;
   }
   if (currentScrollPos > 60 && prevScrollPos < currentScrollPos) {
@@ -47,7 +47,7 @@ window.addEventListener("scroll", function () {
   if (prevScrollPos < currentScrollPos) {
     // user has scrolled down
     // document.querySelector(".nav").classList.remove("show");
-    document.querySelector(".banner").classList.add("hide");
+    document.querySelector(".banner-desktop").classList.add("hide");
   }
   // update previous scroll position
   prevScrollPos = currentScrollPos;
