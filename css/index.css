@@ -1,41 +1,46 @@
-.logo-big {
-  display: none;
-}
-.vital-logo-in-text {
-  width: 70px;
-}
-footer {
-  background-color: #15303f;
-  color: white;
-  padding: 10rem 3rem 3rem 3rem;
+section.heading {
   text-align: center;
+  padding: 4rem;
+  background-color: #e3ecf1;
+  font-size: 1.5rem;
 }
 
-.logo-top {
-  display: none;
-}
-
-.org-nr {
+.heading .buisness-title {
+  color: #15303f;
+  font-size: 2rem;
   font-weight: 200;
-  margin-top: 10rem;
-  display: block;
 }
 
-.powered-by-container span {
-  font-weight: 500;
-  margin-bottom: 2rem;
-  display: block;
+.heading .navn {
+  color: #15303f;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
-.img-footer {
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+.hvorfor-spørsmål-container {
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
 }
 
-.hvorfor-section {
+.hvorfor-spørsmål-container h1 {
+  color: #15303f;
+  font-weight: 200;
+}
+
+section.hvorfor-circle {
   background-color: white;
   height: 90vh;
+}
+
+.hvorfor-circle .container {
+  background-image: url("/img/unsplash_1UnEP_LiMw0.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  z-index: 7;
+  position: relative;
 }
 
 .circle {
@@ -54,191 +59,76 @@ footer {
   margin-right: auto;
 }
 
-.img-circle-container {
-  background-image: url("/img/unsplash_1UnEP_LiMw0.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 90vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  z-index: 7;
-  position: relative;
-  /* padding: 2rem; */
-}
-
 .circle .info {
-  text-align: center;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   color: #15303f;
   font-size: 0.7rem;
+  text-align: center;
+  width: 80%;
 }
 
-.circle .info-part-2 {
-  margin-top: 1rem;
-}
-
-.blue {
+.circle .blue-text {
   color: #0d72b1;
 }
 
-.heading-container {
-  text-align: center;
-  padding: 4rem;
-  background-color: #e3ecf1;
-  font-size: 1.5rem;
+section.opplegg {
+  background-color: #15303f;
+  padding: 7rem 3rem 7rem 3rem;
+  color: white;
 }
 
-.q-container {
-  text-align: center;
-  background-color: white;
-  padding: 1rem;
-  font-size: 0.8rem;
+.opplegg .header {
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-h1.q {
-  color: #15303f;
+
+.opplegg .logo-in-text {
+  width: 90px;
 }
-.eirik .title {
-  color: #15303f;
+
+.opplegg h1 {
   font-size: 2rem;
 }
 
-.eirik .title,
-h1.q {
-  font-weight: 200;
-  display: block;
-}
-
-.eirik .name {
-  font-weight: 800;
-  display: block;
-  color: #15303f;
-  font-size: 2.5rem;
-}
-
-.img {
+.opplegg .container {
   display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img {
-  width: 100%;
+.opplegg h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e77100;
 }
 
-.dot-container {
+.opplegg p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.opplegg .dots-wrapper {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   padding: 1rem 0;
 }
 
-.dot {
+.opplegg .dot {
   background-color: #365567;
   border-radius: 50%;
   height: 10px;
   width: 10px;
 }
-.gradient-container {
-  height: 0;
-}
-.gradient {
-  background: linear-gradient(0deg, rgba(214, 228, 236, 1) 10%, rgba(255, 255, 255, 0) 100%);
-  height: 80px;
-  position: relative;
-  top: -80px;
-  z-index: 8;
-}
-section.tjenester {
-  position: relative;
-  background: rgb(214, 228, 236);
-  /* top: -200px; */
-  padding: 7rem 3rem 7rem 3rem;
-  /* background: linear-gradient(0deg, rgba(214, 228, 236, 1) 80%, rgba(255, 255, 255, 0) 100%); */
-  z-index: 8;
-}
 
-section.kvalifikasjoner {
-  /* position: relative; */
-  background-color: #15303f;
-  /* top: -200px; */
-  padding: 7rem 3rem 7rem 3rem;
-  color: white;
-}
-
-/* .tjenester h1 {
-  color: #15303f;
-  font-size: 2.3rem;
-} */
-
-.kvalifikasjoner h1 {
-  font-size: 2rem;
-  /* color: #D6E4EC; */
-}
-
-/* .tjenester h2 {
-  color: #e77100;
-}
-
-h2.på-forespørsel {
-  color: #56798e;
-} */
-
-.kvalifikasjoner h2 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #e77100;
-}
-
-.tjenester-header,
-.kvalifikasjoner-header {
-  padding-bottom: 4rem;
-  padding-top: 3rem;
-  /* max-width: 500px; */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tjenester span {
-  font-style: italic;
-  font-weight: 300;
-  font-size: 1.1rem;
-}
-
-.alle-tjenester-container,
-.alle-kvalifikasjoner-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  /* max-width: 500px; */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tjenester p,
-.kvalifikasjoner p {
-  font-size: 1.3rem;
-  font-weight: 300;
-  /* color: #D6E4EC; */
-}
-
-.pris {
-  text-align: right;
-}
-
-.tid-pris-container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-}
-
-.CTA-container-main.CTA-container {
-  /* position: relative; */
-  /* background-color: #e3ecf1; */
-  margin-top: 0;
+main .CTA-container {
   padding: 5rem;
-  /* top: -200px; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 3rem;
   background-image: url("/img/unsplash_WvDYdXDzkhs.png");
   background-position: 20% 80%;
@@ -246,50 +136,24 @@ h2.på-forespørsel {
   background-size: cover;
 }
 
-.CTA-main {
+main .CTA {
   min-width: 300px;
-  padding: 1.2rem 1rem 1rem 1rem;
-  text-align: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.CTA-book-session.CTA-main,
-.CTA-andre-forespørsler.CTA-main {
-  margin: 0;
-}
-
-/* .kvalifikasjoner-img {
-  height: 30rem;
-} */
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.CTA-main {
+  /* padding: 1.2rem 1rem 1rem 1rem; */
   padding: 2rem 3.8rem 1.8rem 3.8rem;
   font-size: 1.3rem;
-  max-width: none;
 }
 
 section.hvorfor-online {
   background-color: #fff9f4;
   padding: 4rem 2.5rem;
 }
+
 .hvorfor-online .container {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
 }
+
 .hvorfor-online .icon {
   font-size: 2rem;
   color: #15303f;
@@ -299,6 +163,7 @@ section.hvorfor-online {
   color: #15303f;
   padding-top: 2rem;
 }
+
 .hvorfor-online h1 {
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
@@ -323,25 +188,14 @@ section.hvorfor-online {
 }
 
 @media (min-width: 400px) {
-  .circle {
-    height: 23rem;
-    width: 23rem;
-  }
-
-  .img-circle-container {
-    /* height: 90vh; */
+  .hvorfor-circle .container {
     margin-right: auto;
     margin-left: auto;
   }
-}
 
-@media (min-width: 550px) {
-  .kvalifikasjoner-img {
-    height: 20rem;
-  }
-
-  .kvalifikasjoner-img img {
-    object-position: 60% 40%;
+  .circle {
+    height: 23rem;
+    width: 23rem;
   }
 }
 
@@ -353,50 +207,46 @@ section.hvorfor-online {
 }
 
 @media (min-width: 750px) {
-  .logo-top {
-    position: absolute;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    top: 21px;
-    z-index: 10;
-    align-items: center;
-  }
-  .logo-nav-top {
-    width: 5rem;
-  }
-  .logo-big {
-    display: block;
-    padding-bottom: 3rem;
-    width: 20vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .alle-tjenester-container,
-  .alle-kvalifikasjoner-container {
+  .opplegg .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
-    /* max-width: 1000px; */
   }
+
   section.hvorfor-online {
     padding: 7rem 5rem;
   }
 }
 
 @media (min-width: 1000px) {
-  .img-circle-container {
-    height: 100%;
-    position: relative;
-    right: 230px;
-  }
-  .heading-container {
+  section.heading {
     padding: 9rem 4rem 4rem 4rem;
   }
 
-  .img-footer {
-    width: 30vw;
+  .hvorfor-spørsmål-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 170px;
+    z-index: 9;
+  }
+
+  .hvorfor-spørsmål-container h1 {
+    width: 800px;
+    left: 122px;
+    position: relative;
+    font-size: 2rem;
+    z-index: 9;
+  }
+
+  section.hvorfor-circle {
+    height: 850px;
+  }
+
+  .hvorfor-circle .container {
+    height: 100%;
+    position: relative;
+    right: 230px;
   }
 
   .circle {
@@ -406,66 +256,32 @@ section.hvorfor-online {
     width: 30rem;
   }
 
-  .hvorfor-section {
-    height: 850px;
-  }
-
-  .q-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 170px;
-    /* background-color: transparent; */
-    z-index: 9;
-    /* transform: translateY(50px) translateX(122px); */
-  }
-
-  .q {
-    width: 800px;
-    left: 122px;
-    position: relative;
-  }
-
-  h1.q {
-    font-size: 2rem;
-    z-index: 9;
-  }
-
   .circle .info {
     font-size: 1.3rem;
   }
 
-  section.tjenester {
-    padding: 10rem 7rem 10rem 7rem;
-  }
-
-  section.kvalifikasjoner {
+  section.opplegg {
     padding: 10rem 7rem;
   }
 
-  .kvalifikasjoner-header {
+  .opplegg .header {
     max-width: 1000px;
     padding-bottom: 5rem;
     padding-top: 0;
   }
 
-  .tjenester-header {
-    max-width: 900px;
-    padding-bottom: 5rem;
-    padding-top: 0;
-  }
-
-  .alle-tjenester-container,
-  .alle-kvalifikasjoner-container {
+  .opplegg .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6rem;
     max-width: 1000px;
   }
-  .CTA-main {
+
+  main .CTA {
     padding: 2.2rem 4rem 2rem 4rem;
     font-size: 1.5rem;
   }
+
   .hvorfor-online .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1200px;
