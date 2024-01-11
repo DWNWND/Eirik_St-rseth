@@ -19,7 +19,8 @@ li {
   list-style: none;
 }
 
-main {
+main,
+footer {
   position: relative;
   top: 61px;
 }
@@ -33,7 +34,7 @@ nav {
 img {
   height: 100%;
   width: 100%;
-    /* object-fit: cover; */
+  /* object-fit: cover; */
 }
 
 .reveal {
@@ -48,8 +49,33 @@ img {
   opacity: 1;
 }
 
-@media (min-width: 750px) {
-  main {
-    top: 80.3px;
+/* .remove {
+  opacity: 1;
+  transition: 2s all ease;
+}
+.remove.hidden {
+  opacity: 0;
+  display: none;
+} */
+
+.show {
+  opacity: 1;
+  transition: 0.2s all ease;
+}
+
+.show.hide {
+  transform: translateY(-150px);
+  opacity: 0;
+}
+
+.button:hover {
+  background-color: #faf1e8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #e77100;
+}
+
+@media (min-width: 800px) {
+  main, footer {
+    top: 127.3px;
   }
 }

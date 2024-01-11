@@ -2,13 +2,13 @@ footer {
   background-color: #15303f;
   color: white;
   padding: 10rem 3rem 3rem 3rem;
-  text-align: center;
 }
 
 .powered-by-container span {
   font-weight: 500;
   margin-bottom: 2rem;
   display: block;
+  text-align: center;
 }
 
 .dwnwnd-logo-footer {
@@ -21,10 +21,11 @@ footer {
   font-weight: 200;
   margin-top: 10rem;
   display: block;
+  text-align: center;
 }
 
 @media (min-width: 1000px) {
   .dwnwnd-logo-footer {
-    width: 30vw;
+    width: 15vw;
   }
 }
