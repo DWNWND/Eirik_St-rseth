@@ -72,14 +72,30 @@ section.hvorfor-circle {
 .circle .blue-text {
   color: #0d72b1;
 }
-
-section.opplegg {
-  background-color: #15303f;
+section.opplegg,
+section.tjenester,
+section.om-meg,
+section.kvalifikasjoner,
+section.kontakt {
   padding: 7rem 3rem 7rem 3rem;
+}
+
+section.opplegg,
+section.kvalifikasjoner,
+section.kontakt {
+  background-color: #15303f;
   color: white;
 }
 
-.opplegg .header {
+/* section.tjenester {
+  background-color: #f2f5f6;
+} */
+
+.opplegg .header,
+.tjenester .header,
+.om-meg .header,
+.kvalifikasjoner .header,
+.kontakt .header {
   padding-bottom: 4rem;
   padding-top: 3rem;
   margin-left: auto;
@@ -90,11 +106,25 @@ section.opplegg {
   width: 90px;
 }
 
-.opplegg h1 {
+.opplegg h1,
+.tjenester h1,
+.om-meg h1,
+.kvalifikasjoner h1,
+.kontakt h1 {
   font-size: 2rem;
 }
 
-.opplegg .container {
+.tjenester h1,
+.kvalifikasjoner h1,
+.kontakt h1 {
+  color: #e77100;
+}
+
+.opplegg .container,
+.tjenester .container,
+.om-meg .container,
+.kvalifikasjoner .container,
+.kontakt .container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -107,20 +137,36 @@ section.opplegg {
   margin-bottom: 0.5rem;
   color: #e77100;
 }
+.tjenester h2,
+.kvalifikasjoner h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #15303f;
+}
 
-.opplegg p {
+.opplegg p,
+.tjenester p,
+.om-meg p,
+.kvalifikasjoner p,
+.kontakt p {
   font-size: 1.1rem;
   font-weight: 300;
 }
 
-.opplegg .dots-wrapper {
+.tjenester p {
+  color: #15303f;
+}
+
+.opplegg .dots-wrapper,
+.kvalifikasjoner .dots-wrapper {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   padding: 1rem 0;
 }
 
-.opplegg .dot {
+.opplegg .dot,
+.kvalifikasjoner .dot {
   background-color: #365567;
   border-radius: 50%;
   height: 10px;
@@ -212,7 +258,9 @@ section.hvorfor-online {
 }
 
 @media (min-width: 750px) {
-  .opplegg .container {
+  .opplegg .container,
+  .tjenester .container,
+  .kvalifikasjoner .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
@@ -265,12 +313,19 @@ section.hvorfor-online {
     font-size: 1.3rem;
   }
 
-  section.opplegg {
+  section.opplegg,
+  section.tjenester,
+  section.om-meg,
+  section.kvalifikasjoner,
+  section.kontakt {
     padding: 10rem 7rem;
   }
 
-  .opplegg .header {
-    max-width: 1300px;
+  .opplegg .header,
+  .tjenester .header,
+  .om-meg .header,
+  .kvalifikasjoner .header,
+  .kontakt .header {
     padding-bottom: 5rem;
     padding-top: 0;
   }
@@ -279,18 +334,22 @@ section.hvorfor-online {
     padding: 2.2rem 4rem 2rem 4rem;
     font-size: 1.5rem;
   }
+
+  .container,
+  .header {
+    max-width: 1300px;
+  }
 }
 
 @media (min-width: 1100px) {
-  .opplegg .container {
+  .opplegg .container,
+  .tjenester .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6rem;
-    max-width: 1300px;
   }
 
   .hvorfor-online .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1300px;
   }
-  }
+}
