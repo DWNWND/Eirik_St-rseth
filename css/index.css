@@ -80,6 +80,10 @@ section.kontakt {
   padding: 7rem 3rem 7rem 3rem;
 }
 
+section.tjenester {
+  padding: 3rem 3rem 7rem 3rem;
+}
+
 section.opplegg,
 section.kvalifikasjoner,
 section.kontakt {
@@ -127,21 +131,43 @@ section.kontakt {
 .kontakt .container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.opplegg h2 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #e77100;
+.tjenester .container {
+  gap: 2rem;
 }
+
+.opplegg .container .om-meg .container,
+.kvalifikasjoner .container,
+.kontakt .container {
+  gap: 4rem;
+}
+
+.opplegg h2,
 .tjenester h2,
 .kvalifikasjoner h2 {
   font-weight: 600;
-  margin-bottom: 0.5rem;
+}
+
+.opplegg h2 {
+  color: #e77100;
+}
+
+.tjenester h2,
+.kvalifikasjoner h2 {
   color: #15303f;
+}
+
+.kvalifikasjoner h2,
+.opplegg h2 {
+  margin-bottom: 0.5rem;
+}
+
+.tjenester h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .opplegg p,
@@ -220,6 +246,48 @@ section.hvorfor-online {
   padding-bottom: 0.5rem;
 }
 
+/* TJENESTER */
+.tjenester .card {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.087);
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tjenester .card:hover {
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.139);
+  background-color: #fffcfa;
+  cursor: pointer;
+}
+
+.tjenester .info-pris-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tjenester .pris-container {
+  text-align: right;
+}
+
+.tjenester .link {
+  color: #15303f;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 3rem;
+  display: block;
+  color: #365567;
+}
+
+/* @media (hover) {
+  .tjenester .link {
+    text-decoration: none;
+  }
+  .tjenester .link:hover {
+    text-decoration: underline;
+  }
+} */
+
 @media (min-width: 250px) {
   .circle .info {
     font-size: 0.8rem;
@@ -259,7 +327,6 @@ section.hvorfor-online {
 
 @media (min-width: 750px) {
   .opplegg .container,
-  .tjenester .container,
   .kvalifikasjoner .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -314,11 +381,18 @@ section.hvorfor-online {
   }
 
   section.opplegg,
-  section.tjenester,
   section.om-meg,
   section.kvalifikasjoner,
   section.kontakt {
     padding: 10rem 7rem;
+  }
+
+  section.tjenester {
+    padding: 4rem 7rem 10rem 7rem;
+  }
+
+  .tjenester .link {
+    margin-bottom: 6rem;
   }
 
   .opplegg .header,
@@ -346,8 +420,19 @@ section.hvorfor-online {
   .tjenester .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .opplegg .container {
     gap: 6rem;
   }
+
+  .tjenester .card span {
+    display: block;
+  }
+
+  /* .tjenester .container  {
+    gap:3rem;
+  } */
 
   .hvorfor-online .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
