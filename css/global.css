@@ -37,17 +37,43 @@ nav {
 
 img {
   height: 100%;
-  width: 100%;
-  /* object-fit: cover; */
+  object-fit: contain;
 }
-.opacity {
+nav img {
+  width: 100%;
+  height: 100%;
+}
+/* .opacity {
   background-color: white;
   transition: 2s all ease;
-}
-.opacity.visible {
+} */
+/* .opacity.visible {
   background-color: #15303f;
+} */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #15303f;
 }
 
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #15303f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -104,10 +130,12 @@ img {
   height: 70px;
   width: 70px;
   font-size: 2.5rem;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.311);
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+  box-shadow: none;
 }
 
 @media (min-width: 800px) {

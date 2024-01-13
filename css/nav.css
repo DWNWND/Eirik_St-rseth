@@ -20,6 +20,10 @@ nav.background-color {
   background-color: #081820ca;
 }
 
+.nav-container.nav-om-meg {
+  background-color: #081820ca;
+}
+
 nav {
   width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
@@ -118,7 +122,7 @@ nav .hamburger-lines .line3 {
   display: grid;
   transition: transform 0.5s ease-in-out;
   margin-top: 62px;
-  padding: 2rem 1rem 2rem 1rem ;
+  padding: 2rem 1rem 2rem 1rem;
   background-color: #081820;
   grid-template-rows: 30% 10% 5% 55%;
 }
@@ -131,7 +135,7 @@ nav .hamburger-lines .line3 {
 }
 
 .menu-items .link.active {
-  color:  #bcc9d0;
+  color: #bcc9d0;
 }
 
 .CTA-container {
@@ -208,7 +212,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   .nav-container {
     height: 300px;
     transform: translateY(-150%);
-    grid-template-rows: 50% 20% 30%;
+    grid-template-rows: 55% 20% 25%;
     gap: 1rem;
   }
   nav .powered-by-container {

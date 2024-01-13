@@ -2,7 +2,7 @@
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
-  var opacity = document.querySelectorAll(".opacity")
+  // var opacity = document.querySelectorAll(".opacity")
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -15,17 +15,17 @@ function reveal() {
       reveals[i].classList.remove("active");
     }
   }
-  for (var i = 0; i < opacity.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = opacity[i].getBoundingClientRect().top;
-    // var elementVisible = 150; juster dette tallet for når det skal reveales
-    var elementVisible = -50;
-    if (elementTop < windowHeight - elementVisible) {
-      opacity[i].classList.add("visible");
-    } else {
-      opacity[i].classList.remove("visible");
-    }
-  }
+  // for (var i = 0; i < opacity.length; i++) {
+  //   var windowHeight = window.innerHeight;
+  //   var elementTop = opacity[i].getBoundingClientRect().top;
+  //   // var elementVisible = 150; juster dette tallet for når det skal reveales
+  //   var elementVisible = -50;
+  //   if (elementTop < windowHeight - elementVisible) {
+  //     opacity[i].classList.add("visible");
+  //   } else {
+  //     opacity[i].classList.remove("visible");
+  //   }
+  // }
 }
 
 window.addEventListener("scroll", reveal);
