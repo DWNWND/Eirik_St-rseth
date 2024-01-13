@@ -1,28 +1,37 @@
 footer {
   background-color: #15303f;
-  color: white;
+  color: #7e8b97;
   padding: 10rem 3rem 3rem 3rem;
 }
+
+footer img {
+  width: 100%;
+}
+
 .powered-by-container {
   text-align: center;
 }
 
+.logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
 .powered-by-container .powered-by {
-  font-weight: 500;
+  font-weight: 100;
   margin-bottom: 2rem;
   display: block;
 }
-.powered-by-container .ampersign {
-  margin: 1rem;
-  display: block;
-  font-weight: 200;
+
+.dwnwnd-logo-footer {
+  width: 30vw;
 }
 
-.dwnwnd-logo-footer,
 .truecoach-logo-footer {
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 30vw;
 }
 
 .org-nr {
@@ -30,6 +39,12 @@ footer {
   margin-top: 10rem;
   display: block;
   text-align: center;
+}
+@media (min-width: 600px) {
+  footer .logos-container {
+    flex-direction: row;
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 1000px) {

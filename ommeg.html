@@ -29,7 +29,7 @@
             <img class="logo-nav-tablet" src="img/vital-logo-orange-bigger-dropshadow.png" alt="Vital logo" />
           </div>
         </div>
-        <div class="nav-container">
+        <div class="nav-container nav-om-meg">
           <div class="menu-items">
             <li><a href="/index.html" class="link">Forside</a></li>
             <li><a href="/tjenester.html" class="link">Tjenester</a></li>
@@ -41,14 +41,16 @@
           </div>
           <div class="banner banner-tablet"><div>Din første kartleggingstime er gratis</div></div>
           <div class="powered-by-container">
-            <span>WEBSITE POWERED BY:</span>
+            <span class="powered-by">WEBSITE POWERED BY:</span>
             <div class="dwnwnd-logo-footer">
               <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
             </div>
-            <span class="org-nr">ORG.NR: XXXXXXXXX</span>
+            <div class="truecoach-logo-footer">
+              <a href="#"><img src="img/04_outlineleftwhite.png" alt="truecoach logo and link til homepage" /></a>
+            </div>
           </div>
         </div>
-        <div class="banner banner-desktop show"><div>Din første kartleggingstime er gratis</div></div>
+        <div class="banner banner-desktop show hide-this-particular"><div>Din første kartleggingstime er gratis</div></div>
       </nav>
     </header>
     <main>
@@ -61,7 +63,7 @@
             <p>Hei mitt navn er Eirik Størseth, og jeg brenner for å hjelpe andre å oppnå god helse. Min reise begynte med utdanning hos Academy of Sport Medisin i Amsterdam for 10 år siden. Siden det har jeg gjennomført over 15 000 pt og veiledningstimer, og videreutdannet meg innen ernæring og psykologi.</p>
           </div>
           <div class="card">
-            <p>Jeg har konkurrert profesjonelt i thai boksing, men har nå lagt boksehanskene på hylla. Jeg elsker all slags type sport og trening, men elsker like mye et glass vin og et godt måltid. Jeg mener oppriktig at du kan oppnå god helse uten at det skal gå på bekostning av hva du elsker. </p>
+            <p>Jeg har konkurrert profesjonelt i thai boksing, men har nå lagt boksehanskene på hylla. Jeg elsker all slags type sport og trening, men elsker like mye et glass vin og et godt måltid. Jeg mener oppriktig at du kan oppnå god helse uten at det skal gå på bekostning av hva du elsker.</p>
           </div>
           <div class="card">
             <p>Gjennom årene har jeg opparbeidet meg en unik innsikt i hvordan mennesker kan oppnå bedre helse, uavhengig av utgangspunkt og livsfaser. Jeg er empatisk, men streng. Og setter tydlige forventinger til mine kunder.</p>
@@ -126,13 +128,19 @@
     </main>
     <footer>
       <div class="powered-by-container">
-        <span>WEBSITE POWERED BY:</span>
-        <div class="dwnwnd-logo-footer">
-          <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
+        <span class="powered-by">WEBSITE POWERED BY:</span>
+        <div class="logos-container">
+          <div class="dwnwnd-logo-footer">
+            <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
+          </div>
+          <div class="truecoach-logo-footer">
+            <a href="#"><img src="img/04_outlineleftwhite.png" alt="truecoach logo and link til homepage" /></a>
+          </div>
         </div>
       </div>
       <span class="org-nr">ORG.NR: XXXXXXXXX</span>
     </footer>
+    <button id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
     <script type="module" src="index.js"></script>
   </body>
 </html>
