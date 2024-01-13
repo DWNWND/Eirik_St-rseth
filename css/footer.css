@@ -1,28 +1,39 @@
 footer {
   background-color: #15303f;
-  color: white;
+  color: #7e8b97;
   padding: 10rem 3rem 3rem 3rem;
 }
+
 .powered-by-container {
   text-align: center;
 }
 
 .powered-by-container .powered-by {
-  font-weight: 500;
+  font-weight: 100;
   margin-bottom: 2rem;
   display: block;
 }
-.powered-by-container .ampersign {
+/* .powered-by-container .ampersign {
   margin: 1rem;
   display: block;
   font-weight: 200;
+} */
+
+.dwnwnd-logo-footer {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
-.dwnwnd-logo-footer,
 .truecoach-logo-footer {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+.truecoach-logo-footer {
+  margin-bottom: 2rem;
 }
 
 .org-nr {

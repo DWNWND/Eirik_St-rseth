@@ -1,27 +1,27 @@
 section.heading {
   text-align: center;
   padding: 4rem;
-  background-color: #e3ecf1;
+  background-color: #00000079;
   font-size: 1.5rem;
 }
 
 .heading .buisness-title {
-  color: #15303f;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 200;
 }
 
 .heading .navn {
-  color: #15303f;
+  color: #ffffff;
   font-size: 2.5rem;
   font-weight: 800;
 }
 
-.hvorfor-spørsmål .container {
+.hvorfor-spørsmål .wrapper {
   font-size: 0.8rem;
   padding: 1rem;
   text-align: center;
-  background-color: white;
+  /* background-color: #fffcfa; */
 }
 
 .hvorfor-spørsmål h1 {
@@ -30,31 +30,42 @@ section.heading {
 }
 
 section.hvorfor-circle {
-  background-color: white;
+  /* background-color: white; */
   height: 90vh;
 }
 
-.hvorfor-circle .container {
+.hvorfor-circle .wrapper {
   background-image: url("/img/unsplash_1UnEP_LiMw0.png");
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   height: 90vh;
   z-index: 7;
   position: relative;
 }
 
+.hvorfor-circle .wrapper {
+  /* background-position: 20% 80%; */
+  background-color: #00000079;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
 .circle {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #fffcfa;
   height: 90vw;
   width: 90vw;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 50px 15px #e2f4ff;
+  box-shadow: 0 0 50px 15px #dfd8d2;
   position: relative;
-  top: 150px;
+  top: 100px;
   z-index: 9;
+  padding: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,7 +77,7 @@ section.hvorfor-circle {
   color: #15303f;
   font-size: 0.7rem;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 
 .circle .blue-text {
@@ -81,10 +92,13 @@ section.kontakt {
 }
 
 section.tjenester {
-  padding: 3rem 3rem 7rem 3rem;
+  padding: 3rem 2rem 7rem 2rem;
 }
 
-section.opplegg,
+section.opplegg {
+  color: white;
+}
+
 section.kvalifikasjoner,
 section.kontakt {
   background-color: #15303f;
@@ -164,7 +178,8 @@ section.kontakt {
   gap: 2rem;
 }
 
-.opplegg .container .om-meg .container,
+.opplegg .container,
+.om-meg .container,
 .kvalifikasjoner .container {
   gap: 4rem;
 }
@@ -190,7 +205,8 @@ section.kontakt {
   margin-bottom: 0.5rem;
 }
 
-.tjenester h2, .kontakt h2  {
+.tjenester h2,
+.kontakt h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -227,18 +243,8 @@ section.kontakt {
   width: 10px;
 }
 
-main .CTA-container.tjenester {
+main .CTA-container.no-background-img {
   padding: 5rem 5rem 0 5rem;
-  gap: 3rem;
-}
-
-main .CTA-container.index {
-  background-image: url("/img/unsplash_WvDYdXDzkhs.png");
-  background-position: 20% 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5rem;
-  gap: 3rem;
 }
 
 main .CTA {
@@ -280,12 +286,14 @@ section.hvorfor-online {
 }
 
 /* TJENESTER */
-section.tjenester {
+section.tjenester,
+section.heading {
   background-image: url("/img/unsplash_WvDYdXDzkhs.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   /* background-position: 20% 80%; */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
+  background-attachment: fixed;
 }
 
 .tjenester .card {
@@ -302,14 +310,6 @@ section.tjenester {
   cursor: pointer;
   margin: 5px;
 }
-
-/* .tjenester .link {
-  font-size: 1rem;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 3rem;
-  display: block;
-  color: rgb(186, 198, 205);
-} */
 
 @media (min-width: 250px) {
   .circle .info {
@@ -330,7 +330,7 @@ section.tjenester {
 }
 
 @media (min-width: 400px) {
-  .hvorfor-circle .container {
+  .hvorfor-circle .wrapper {
     margin-right: auto;
     margin-left: auto;
   }
@@ -338,6 +338,12 @@ section.tjenester {
   .circle {
     height: 23rem;
     width: 23rem;
+  }
+}
+
+@media (min-width: 600px) {
+  section.tjenester {
+    padding: 3rem 3rem 7rem 3rem;
   }
 }
 
@@ -362,6 +368,14 @@ section.tjenester {
 }
 
 @media (min-width: 800px) {
+  .heading .buisness-title {
+    font-size: 3rem;
+  }
+
+  .heading .navn {
+    font-size: 3.5rem;
+  }
+
   .tjenester .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 150px;
@@ -371,24 +385,42 @@ section.tjenester {
   .kontakt h1 {
     text-align: center;
   }
+
+  section.tjenester,
+  section.kontakt {
+    padding: 12rem 3rem 7rem 3rem;
+  }
+
+  section.heading,
+  section.tjenester {
+    height: 100vh;
+  }
+  section.heading {
+    padding: 17rem 7rem 7rem 7rem;
+  }
+
+  main .CTA-container.no-background-img.index {
+    padding: 10rem 0rem 0 0rem;
+  }
 }
 
 @media (min-width: 1000px) {
-  section.heading {
+  /* section.heading {
     padding: 169px 100px 100px 100px;
-  }
+  } */
 
-  .hvorfor-spørsmål .container {
+  .hvorfor-spørsmål .wrapper {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 170px;
+    padding: 2rem;
+    /* top: 100px; */
     z-index: 9;
   }
 
   .hvorfor-spørsmål h1 {
-    width: 800px;
-    left: 122px;
+    /* width: 800px; */
+    /* left: 122px; */
     position: relative;
     font-size: 2rem;
     z-index: 9;
@@ -398,17 +430,27 @@ section.tjenester {
     height: 850px;
   }
 
-  .hvorfor-circle .container {
+  /* section.hvorfor-circle,
+  section.opplegg,
+  section.hvorfor-online.index,
+  footer.index {
+    position: relative;
+    top: -69px;
+  } */
+
+  .hvorfor-circle .wrapper {
     height: 100%;
     position: relative;
-    right: 230px;
+    /* right: 230px; */
+    /* background-attachment: fixed; */
   }
 
   .circle {
-    left: 460px;
-    top: 260px;
-    height: 30rem;
-    width: 30rem;
+    /* left: 460px;
+    top: 260px; */
+    height: 40rem;
+    width: 40rem;
+    padding: 5rem;
   }
 
   .circle .info {
@@ -417,23 +459,18 @@ section.tjenester {
 
   section.opplegg,
   section.om-meg,
-  section.kvalifikasjoner,
-  section.kontakt {
+  section.kvalifikasjoner {
     padding: 10rem 7rem;
   }
 
-  section.tjenester {
-    padding: 4rem 7rem 7rem 7rem;
+  section.tjenester,
+  section.kontakt {
+    padding: 12rem 7rem 7rem 7rem;
   }
-
-  /* .tjenester .link {
-    margin-bottom: 6rem;
-  } */
 
   .opplegg .header,
   .om-meg .header,
-  .kvalifikasjoner .header,
-  .kontakt .header {
+  .kvalifikasjoner .header {
     padding-bottom: 5rem;
     padding-top: 0;
   }

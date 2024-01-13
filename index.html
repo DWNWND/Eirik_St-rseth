@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="index">
     <header>
       <nav class="show">
         <div class="logo-nav-desktop-container">
@@ -41,33 +41,35 @@
           </div>
           <div class="banner banner-tablet"><div>Din første kartleggingstime er gratis</div></div>
           <div class="powered-by-container">
-            <span>WEBSITE POWERED BY:</span>
+            <span class="powered-by">WEBSITE POWERED BY:</span>
             <div class="dwnwnd-logo-footer">
               <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
             </div>
-            <span class="org-nr">ORG.NR: XXXXXXXXX</span>
+            <div class="truecoach-logo-footer">
+              <a href="#"><img src="img/04_outlineleftwhite.png" alt="truecoach logo and link til homepage" /></a>
+            </div>
           </div>
         </div>
-        <div class="banner banner-desktop show"><div>Din første kartleggingstime er gratis</div></div>
+        <div class="banner banner-desktop show hide-this-particular"><div>Din første kartleggingstime er gratis</div></div>
       </nav>
     </header>
     <main>
       <section class="heading">
         <div class="buisness-title">trenings- og helseveileder</div>
         <div class="navn">Eirik Størseth</div>
+        <div class="CTA-container no-background-img index">
+          <li>
+            <a href="/kontakt.html" class="CTA button">BOOK EN<b>GRATIS</b>KARTLEGGINGSTIME</a>
+          </li>
+        </div>
       </section>
-      <div class="CTA-container index">
-        <li>
-          <a href="/kontakt.html" class="CTA button">BOOK EN<b>GRATIS</b>KARTLEGGINGSTIME</a>
-        </li>
-      </div>
       <section class="hvorfor-spørsmål">
-        <div class="container reveal">
+        <div class="wrapper reveal">
           <h1>Hvorfor bør du ha en online helseveileder?</h1>
         </div>
       </section>
       <section class="hvorfor-circle">
-        <div class="container">
+        <div class="wrapper">
           <div class="circle reveal">
             <div class="info">
               <p class="part-1">God helse er <b>vitalt</b> for å leve et optimalt liv. Med meg som din digitale helseveileder kan vi sammen <b class="blue-text">ta kontroll over din helse</b> og styre deg i riktig retning utifra dine individuelle mål.</p>
@@ -78,7 +80,39 @@
           </div>
         </div>
       </section>
-      <section class="opplegg">
+      <section class="hvorfor-online index">
+        <div class="container">
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
+            <div class="info">
+              <h1>Stedsuavhengighet</h1>
+              <p class="">Vårt treningsløp vil følge deg uansett hvor du beveger deg i verden, og vil sikre at du vil kunne få de beste resultatene.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div class="info">
+              <h1>Effektivitet</h1>
+              <p class="">En 30 min økt med meg kan du klemme inn i hvilken som helst hverdag. Når som helst, hvor som helst.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="info">
+              <h1>Kvalitet</h1>
+              <p class="">Med over 10 år i bransjen, en idrettskarriære under belte og uttallige kurs vil jeg forsikre deg om at du får den beste oppfølgingen tilgjengelig.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+            <div class="info">
+              <h1>Diskresjon</h1>
+              <p class="">Hos meg får du full diskresjon og trygge kontaktsplatformer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="opplegg opacity">
         <div class="header reveal">
           <h1>SLIK FUNGERER <img src="img/vital-logo-orange-bigger.png" class="logo-in-text" alt="vital logo" /> VEILEDNING</h1>
         </div>
@@ -162,48 +196,20 @@
           <a href="/kontakt.html" class="CTA button">BOOK EN<b>GRATIS</b>KARTLEGGINGSTIME</a>
         </li>
       </div> -->
-      <section class="hvorfor-online">
-        <div class="container">
-          <div class="card">
-            <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
-            <div class="info">
-              <h1>Stedsuavhengighet</h1>
-              <p class="reveal">Vårt treningsløp vil følge deg uansett hvor du beveger deg i verden, og vil sikre at du vil kunne få de beste resultatene.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon"><i class="fa-solid fa-bolt-lightning"></i></div>
-            <div class="info">
-              <h1>Effektivitet</h1>
-              <p class="reveal">En 30 min økt med meg kan du klemme inn i hvilken som helst hverdag. Når som helst, hvor som helst.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon"><i class="fa-solid fa-comments"></i></div>
-            <div class="info">
-              <h1>Kvalitet</h1>
-              <p class="reveal">Med over 10 år i bransjen, en idrettskarriære under belte og uttallige kurs vil jeg forsikre deg om at du får den beste oppfølgingen tilgjengelig.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon"><i class="fa-solid fa-user"></i></div>
-            <div class="info">
-              <h1>Diskresjon</h1>
-              <p class="reveal">Hos meg får du full diskresjon og trygge kontaktsplatformer.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-    <footer>
+    <footer class="index">
       <div class="powered-by-container">
-        <span>WEBSITE POWERED BY:</span>
+        <span class="powered-by">WEBSITE POWERED BY:</span>
         <div class="dwnwnd-logo-footer">
           <a href="#"><img src="img/dwnwnd-logo-white.png" alt="downwind website design and build logo and link til homepage" /></a>
+        </div>
+        <div class="truecoach-logo-footer">
+          <a href="#"><img src="img/04_outlineleftwhite.png" alt="truecoach logo and link til homepage" /></a>
         </div>
       </div>
       <span class="org-nr">ORG.NR: XXXXXXXXX</span>
     </footer>
+    <button id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
     <script type="module" src="index.js"></script>
   </body>
 </html>

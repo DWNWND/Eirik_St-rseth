@@ -12,7 +12,11 @@
 body {
   overscroll-behavior: none;
   font-family: "Helvetica", "Arial", sans-serif;
-  background-color: #e3ecf1;
+  /* background-color: #e3ecf1; */
+}
+
+body.index {
+  background-color: #fffcfa;
 }
 
 li {
@@ -36,6 +40,13 @@ img {
   width: 100%;
   /* object-fit: cover; */
 }
+.opacity {
+  background-color: white;
+  transition: 2s all ease;
+}
+.opacity.visible {
+  background-color: #15303f;
+}
 
 .reveal {
   position: relative;
@@ -49,6 +60,9 @@ img {
   opacity: 1;
 }
 
+.hide-this-particular {
+  display: none;
+}
 /* .remove {
   opacity: 1;
   transition: 2s all ease;
@@ -74,8 +88,31 @@ img {
   color: #e77100;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #0a1f24; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  height: 70px;
+  width: 70px;
+  font-size: 2.5rem;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 @media (min-width: 800px) {
-  main, footer {
-    top: 127.3px;
+  main,
+  footer {
+    top: 0px;
   }
 }
