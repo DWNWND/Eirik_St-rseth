@@ -38,7 +38,7 @@ nav {
 .menu-items .link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #3f464c;
+  color: #718895;
   font-weight: 800;
   font-size: 1rem;
   transition: color 0.2s ease-in-out;
@@ -123,6 +123,10 @@ nav .hamburger-lines .line3 {
   align-items: center;
 }
 
+.menu-items .link.active {
+  color: #3f464c;
+}
+
 .CTA-container {
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +194,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 
 @media (hover: hover) {
   .link:hover {
-    color: #718895;
+    color: #3f464c;
   }
 }
 
