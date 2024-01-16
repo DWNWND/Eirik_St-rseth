@@ -10,7 +10,7 @@ section.tjenester {
 }
 
 section.om-meg {
-  background-color: #fffcfa;
+  background-color: #e3ecf1;
 }
 
 .heading .buisness-title {
@@ -20,7 +20,7 @@ section.om-meg {
 }
 
 .heading .navn {
- color: #fffcfa;
+  color: #fffcfa;
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -112,7 +112,7 @@ section.kontakt {
 
 .opplegg .header,
 .om-meg .header,
-.kvalifikasjoner .header{
+.kvalifikasjoner .header {
   padding-bottom: 4rem;
   padding-top: 3rem;
   margin-left: auto;
@@ -120,7 +120,7 @@ section.kontakt {
 }
 .kontakt .header {
   padding: 2rem 0;
-  border-radius: 20px 20px 0 0 ;
+  border-radius: 20px 20px 0 0;
   text-align: center;
   background-color: #dfd8d2;
 }
@@ -203,13 +203,13 @@ section.kontakt {
 }
 
 .opplegg h2,
-.orange-text {
+.orange-text,
+.om-meg h1 {
   color: #e77100;
 }
 
 .kvalifikasjoner h2,
-.kontakt h2,
-.om-meg h1 {
+.kontakt h2 {
   color: #15303f;
 }
 
@@ -230,7 +230,7 @@ section.kontakt {
   margin-bottom: 1rem;
 }
 
-.tjenester h2, 
+.tjenester h2,
 .kontakt h2 {
   font-size: 1.2rem;
   text-align: center;
