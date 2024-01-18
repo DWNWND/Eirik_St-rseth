@@ -313,7 +313,7 @@ section.hvorfor-online {
 /* TJENESTER */
 section.tjenester,
 section.heading {
-  background-image: url("/img/unsplash_WvDYdXDzkhs.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-image: url("/img/unsplash_WvDYdXDzkhs.jpg"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
