@@ -12,7 +12,6 @@
 body {
   overscroll-behavior: none;
   font-family: "Helvetica", "Arial", sans-serif;
-  /* background-color: #e3ecf1; */
 }
 
 body.index {
@@ -43,13 +42,6 @@ nav img {
   width: 100%;
   height: 100%;
 }
-/* .opacity {
-  background-color: white;
-  transition: 2s all ease;
-} */
-/* .opacity.visible {
-  background-color: #15303f;
-} */
 
 .hover-underline-animation {
   display: inline-block;
@@ -89,14 +81,6 @@ nav img {
 .hide-this-particular {
   display: none;
 }
-/* .remove {
-  opacity: 1;
-  transition: 2s all ease;
-}
-.remove.hidden {
-  opacity: 0;
-  display: none;
-} */
 
 .show {
   opacity: 1;

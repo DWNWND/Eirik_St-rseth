@@ -58,7 +58,6 @@ section.hvorfor-circle {
 }
 
 .circle {
-  /* background-color: rgb(255, 255, 255); */
   background-color: #fffcfa;
   height: 90vw;
   width: 90vw;
@@ -218,7 +217,6 @@ section.kontakt {
   margin-bottom: 0.5rem;
 }
 .tjenester h2 {
-  /* border-radius: 20px 20px 0 0; */
   width: 100%;
   background-color: #dfd8d2;
   text-transform: uppercase;
@@ -316,7 +314,6 @@ section.hvorfor-online {
 section.tjenester,
 section.heading {
   background-image: url("/img/unsplash_WvDYdXDzkhs.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  /* background-position: 20% 80%; */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
@@ -325,7 +322,6 @@ section.heading {
 
 .tjenester .card {
   background-color: #fffcfaef;
-  /* padding: 2rem; */
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.087);
   border-radius: 20px;
   transition: all 0.2s ease-in-out;
@@ -341,7 +337,6 @@ section.heading {
 .tjenester .card:hover {
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.139);
   background-color: #fffcfa;
-  /* cursor: pointer; */
   margin: 0px;
 }
 
@@ -354,8 +349,6 @@ section.heading {
 }
 .tjenester .info-container {
   display: grid;
-  flex-direction: column;
-  align-items: center;
   padding: 2rem 0;
   gap: 1rem;
 }
@@ -365,11 +358,13 @@ section.heading {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  align-self: end;
 }
 
 .tjenester .info-container a {
   text-decoration: none;
+  max-width: 170px;
+  align-self: end;
+  justify-self: center;
 }
 
 .circle .info .part-2 {
@@ -478,10 +473,6 @@ section.heading {
     padding: 12rem 3rem 7rem 3rem;
   }
 
-  /* section.tjenester {
-    height: 110vh;
-  } */
-
   section.heading {
     height: 100vh;
   }
@@ -585,11 +576,6 @@ section.heading {
     }
   }
 
-  @media (min-width: 1300px) {
-    /* .tjenester .illustrasjon {
-      height: 30rem;
-    } */
-  }
   @media (min-width: 1600px) {
     .tjenester .container {
       grid-template-columns: 1fr 1fr 1fr 1fr;

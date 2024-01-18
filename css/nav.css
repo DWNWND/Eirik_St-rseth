@@ -35,7 +35,6 @@ nav {
 
 .logo-nav-desktop-container {
   display: none;
-  /* transition: all 1s ease-in-out; */
 }
 
 .navbar {
@@ -146,7 +145,6 @@ nav .hamburger-lines .line3 {
 
 nav .CTA-container {
   gap: 1.6rem;
-  /* margin-top: 2rem; */
 }
 
 .CTA {
