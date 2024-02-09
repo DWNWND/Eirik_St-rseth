@@ -1,7 +1,8 @@
 section.heading {
+  position: relative;
   text-align: center;
-  padding: 4rem;
-  background-color: #00000079;
+  /* padding: 4rem; */
+  background-color: #ffffff;
   font-size: 1.5rem;
 }
 
@@ -13,6 +14,45 @@ section.om-meg {
   background-color: #e3ecf1;
 }
 
+.heading .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: white;
+  opacity: 0.5;
+}
+#myVideo {
+  /* position: absolute; */
+  /* right: 0;
+  bottom: 0; */
+
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.heading-content {
+  z-index: 3;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.heading .container {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .logo-header {
+  width: 100%;
+  padding: 3rem;
+}
 .heading .buisness-title {
   color: #ffffff;
   font-size: 2rem;
@@ -35,6 +75,25 @@ section.om-meg {
 .hvorfor-spørsmål h1 {
   color: #15303f;
   font-weight: 200;
+}
+
+section.hvorfor-eirik {
+  padding: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hvorfor-eirik .portrett {
+  min-width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.hvorfor-eirik .portrett img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
 }
 
 section.hvorfor-circle {
@@ -72,6 +131,16 @@ section.hvorfor-circle {
   padding: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hvorfor-eirik .info {
+  display: flex;
+  flex-direction: column;
+  color: #15303f;
+  font-size: 0.7rem;
+  gap: 1rem;
+  /* text-align: center;
+  width: 100%; */
 }
 
 .circle .info {
@@ -311,8 +380,8 @@ section.hvorfor-online {
 }
 
 /* TJENESTER */
-section.tjenester,
-section.heading {
+/* section.heading  */
+section.tjenester {
   background-image: url("/img/unsplash_WvDYdXDzkhs.jpg"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,30 +443,36 @@ section.heading {
   margin-top: 2rem;
 }
 
+.hvorfor-eirik .info a,
 .circle .info a {
   text-decoration: none;
   color: #15303f;
 }
+.hvorfor-eirik .info a:hover,
 .circle .info a:hover {
   font-weight: bolder;
 }
+.hvorfor-eirik .info i,
 .circle .info i {
   margin-left: 1rem;
 }
 
 @media (min-width: 250px) {
+  .hvorfor-eirik .info,
   .circle .info {
     font-size: 0.8rem;
   }
 }
 
 @media (min-width: 300px) {
+  .hvorfor-eirik .info,
   .circle .info {
     font-size: 0.9rem;
   }
 }
 
 @media (min-width: 350px) {
+  .hvorfor-eirik .info,
   .circle .info {
     font-size: 1rem;
   }
@@ -473,12 +548,12 @@ section.heading {
     padding: 12rem 3rem 7rem 3rem;
   }
 
-  section.heading {
+  /* section.heading {
     height: 100vh;
-  }
-  section.heading {
+  } */
+  /* section.heading {
     padding: 30vh 7rem 30vh 7rem;
-  }
+  } */
 
   main .CTA-container.no-background-img.index {
     padding: 15vh 0rem 0 0rem;
@@ -526,6 +601,7 @@ section.heading {
       padding: 5rem;
     }
 
+    .hvorfor-eirik .info,
     .circle .info {
       font-size: 1.3rem;
     }
